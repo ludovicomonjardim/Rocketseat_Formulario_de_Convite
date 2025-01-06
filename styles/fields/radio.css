@@ -1,0 +1,42 @@
+.radio-wrapper {
+  display: grid;
+  /* A largura mínima é de 120px -> 120/16 = 7.5rem */
+  grid-row: auto;
+  grid-template-columns: 8rem 8rem;
+  gap: 0rem;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem;
+  border: 1px solid var(--input-stroke);
+  border-radius: 0.5rem;
+  background-color: var(--shape-background);
+}
+
+.radio-inner {
+  border: 1px solid ;
+  border-radius: 0.25rem;
+
+  /* display: grid; */
+  /* align-content: center; */
+  align-items: center;
+  /* justify-items: center; */
+  gap: 0.5rem;
+  
+  padding: 0.05rem;
+
+  position: relative;
+  & input,
+  & input:focus,
+  & input:hover {
+    /* DESFAZ AS CONFIGURAÇÕES EM INPUTS.CSS */
+    all: unset;
+
+    position: absolute;
+    inset: 0;
+  }
+
+  &:has(:checked) {
+    border: 1px solid var(--stroke-highlight);
+    background-color: bisque;
+    cursor: pointer;
+  }
+}

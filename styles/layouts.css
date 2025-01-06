@@ -1,0 +1,69 @@
+#app {
+  display: grid;
+  /* aside tem 400px e main tem 820px
+    logo, o total é de 1220px
+    400 de 1220 = 32,79% (400 / 1220)
+    820 de 1220 = 67,21% (820 / 1220) */  
+  grid-template-columns: 32.79% 67.21%;
+  grid-template-areas: "aside main";
+
+  gap: 1.25rem;
+
+  height: 100vh;
+  overflow: hidden;
+
+}
+
+main {
+  grid-area: main;
+  background-color: var(--shape-body);
+  border-radius: 0.75rem;
+  margin: 1.25rem 1.25rem 1.25rem 0rem;
+  /* O padding é de 80px. Logo, 80px / 16px = 5rem */
+  padding: 5rem;
+  max-width: 51.25rem;
+
+  overflow: auto;
+  .main-container {
+    /* main tem 820px. padding de 130px(8.125rem). Dois lados = 260px
+    820px - 260px = 560px = 35rem */
+    max-width: 35rem;
+  }
+}
+
+aside {
+  grid-area: aside;
+  background-color: aqua;
+  
+  background-image: url(../assets/images/Background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; 
+
+  max-height: 45.5rem;
+  max-width: 25rem;
+
+  border-radius: 0.75rem;
+  margin: 1.25rem 0rem 1.25rem 1.25rem;
+
+  padding: 2rem;
+  margin-left: auto;
+  .aside-container {
+    /* aside tem 400px. padding de 32px(2rem). Dois lados = 64px
+    400px - 64px = 336px = 21rem */
+    max-width: 21rem;
+    
+    & .logo {
+      height: 2.86rem;
+      width:  2.99rem;
+    }
+  }
+
+  & h2 {
+    font: var(--font-logo);
+    color: var(--pink);
+  }
+
+  & p {
+    font: var(--text-heading);
+  }
+}

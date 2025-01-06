@@ -6,12 +6,101 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fomulário de Convite</title>
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="styles/index.css">
 
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
 </head>
 <body>
-  
+  <div id="app">
+    <main>
+      <div class="main-container">
+        <h1>Crie seu convite</h1>
+          <form>
+
+            <fieldset class="about">
+
+              <legend>
+                <img src="assets/icons/calendar.svg" alt="">
+                <span>Sobre o evento</span>
+              </legend>
+
+              <div class="input-wrapper">
+                <label for="event_name">Título</label>
+                <input id="event_name" name="event_name" type="text" placeholder="Nome do evento">
+              </div>
+
+              <div class="flex">
+
+                <div class="input-wrapper flex-1">
+                  <label for="star">Início</label>
+                  <input id="star" name="star" type="date">
+                </div>
+                
+                <div class="input-wrapper flex-1">
+                  <label for="end">Fim</label>
+                  <input id="end" name="end" type="date">
+                </div>
+
+              </div>
+
+              <div class="flex">
+
+                <div class="input-wrapper flex-1">
+                  <label>Tipo</label>
+                  
+                  <div class="radio-wrapper flex">
+
+                    <div class="radio-inner flex">
+                      <img src="assets/icons/building-2.svg" alt="">
+                      <label for="live">Presencial</label>
+                      <input type="radio" name="kind" value="live" id ="live">
+                    </div>
+
+                    <div class="radio-inner flex">
+                      <img src="assets/icons/video.svg" alt="">
+                      <label for="online">On line</label>
+                      <input type="radio" name="kind" value="online" id ="online">
+                    </div>
+                  </div>
+
+                </div>
+                
+                <div class="input-wrapper flex-1">
+                  <label for="local">Local</label>
+                  <input id="local" name="local" type="text" placeholder="Link ou local">
+                </div>
+                
+              </div>
+
+              <div class="textarea-wrapper">
+                <label for="event-description">Descrição</label>
+                <textarea 
+                  name="event-description" 
+                  id="event-description"
+                  cols="30"
+                  rows="5"
+                  placeholder="Escreva sobre os detalhes do evento"
+                ></textarea>
+              </div>
+
+            </fieldset>
+
+          </form>
+
+      </div>
+    </main>
+
+    <aside>
+      <div class="aside-container">
+        <header>
+          <img class="logo" src="assets/icons/Logo.svg" alt="Logo Festivite">
+          <h2>Festivite</h2>
+          <p>Crie um convite digital para o seu evento</p>
+        </header>
+      </div>
+    </aside>
+
+  </div>
 </body>
 </html>

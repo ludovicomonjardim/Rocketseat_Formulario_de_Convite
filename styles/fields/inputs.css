@@ -1,0 +1,54 @@
+input, textarea, select {
+
+  appearance: none;
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 2px solid transparent;
+  outline: 1px solid var(--stroke-default);
+  padding: 0.75rem 1rem;
+  font: var(--font-body-md);
+  color: var(--input-placeholder);
+  background-color: var(--shape-background);
+  border: 1px solid var(--input-stroke);
+
+  &::placeholder {
+    color: var(--input-placeholder);
+  }
+}
+
+label {
+  font: var(--font-body-sm);
+  color: var(--text-heading);
+
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+
+input[type="date"] {
+  /* PARA ESCONDER O ÍCONE DEFAULT */
+  &::-webkit-calendar-picker-indicator {
+    opacity: 0;
+  }
+}
+
+.flex {
+  gap: 1.25rem;
+}
+
+/* .radio-wrapper {
+  display: flex;
+  background-color: aqua;
+  img {
+    background-color: brown;
+  }
+} */
+
+input:focus, 
+select:focus,
+textarea:focus,
+input[type="date"]:focus-within {
+  outline: 1px solid var(--cyan);
+  /* border-color: var(--stroke-highlight);
+  outline-offset: 1.1px; */
+}
