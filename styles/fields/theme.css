@@ -1,0 +1,56 @@
+
+.theme-cards { 
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+
+  & .theme-radio-card {
+    position: relative;
+    display: grid;
+    align-items: center;
+
+    outline: 0.01rem solid var(--input-placeholder);
+    border: 0.01rem solid transparent;
+
+    background-color: var(--shape-button);
+    border-radius: 0.4rem;
+
+    justify-items: center;
+
+    img {
+      border-radius: 0.4rem;
+      width: 100%;
+      object-fit: cover;
+      min-width: 6rem;
+      min-height: 3rem;
+      padding: 0.2rem;
+    }
+
+    position: relative;
+    & input,
+    & input:focus,
+    & input:hover {
+      all: unset;
+      position: absolute;
+      inset: 0;
+    }
+
+    &:has(:checked) {
+      border-color: var(--brand-light);
+      outline-color: var(--brand-light);
+      color: var(-text-heading);
+      & svg {
+        fill: var(--brand-light);
+      }
+    }
+
+    & label {
+      font: var(--font-body-sm);
+      color: var(--text-heading);
+      display: block;
+      margin-inline: auto;
+      margin-block: .25rem .5rem;
+    }
+  }
+}

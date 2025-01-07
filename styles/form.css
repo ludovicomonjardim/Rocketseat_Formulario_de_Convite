@@ -1,13 +1,9 @@
 @import url(fields/index.css);
 
-form {
-  margin-top: 2.5rem ;
-}
-
 fieldset {
   border: none;
   display: grid;
-  gap: 1.5rem;
+  gap: 1.25rem;
 
   legend {
     display: flex;    
@@ -15,7 +11,17 @@ fieldset {
     gap: 1rem;
 
     font: var(--font-heading-sm);
+    padding-top: 2.5rem ;
     margin-bottom: 1.5rem;
+
+    & svg path {
+      fill: var(--input-placeholder)
+    }
   }
 }
 
+.main-color {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: auto;
+}

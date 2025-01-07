@@ -47,6 +47,7 @@
   --font-body-md: 600 1rem/1.5 var(--font-family-open);        /* 16px */
   --font-body-sm: 600 0.875rem/1.5 var(--font-family-open);    /* 14px */
   --font-body-xs: 600 0.75rem/1.5 var(--font-family-open);     /* 12px */
+  
 }
 
 body {  
@@ -68,6 +69,7 @@ img {
 
 .flex {
   display: flex;
+
 }
 
 .flex-1 {
@@ -75,5 +77,6 @@ img {
 }
 
 .flex-2 {
-  flex: 1
+  flex: 2;
+  /* flex-direction: row; */
 }

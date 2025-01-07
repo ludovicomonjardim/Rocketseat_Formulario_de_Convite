@@ -1,0 +1,133 @@
+#final {
+  display: grid;
+  grid-template-columns: 11rem 4fr;
+  gap: 1rem;
+  border: 1px dashed greenyellow;
+
+}
+
+.lighting {
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid;   */
+}
+
+.coverphoto {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid red;
+
+}
+
+.radio-lighting {
+  min-width: 11rem;
+  padding-right: 3.5rem;
+  margin-bottom: 1rem;
+  & label {
+    display: block;
+    color: var(--text-body);
+    margin-bottom: 0.75rem;
+  }
+
+  & .flex-2 {
+    display: grid;
+    grid-template-columns: 50px 100px;
+    width: 4rem;
+    height: 2rem;
+    align-items: center;
+    gap: 1.5rem;
+
+    &:has(:checked) {
+      & .escuro {
+        display: none;
+      }
+
+      & .claro {
+        display: unset;
+      }
+    }
+
+    & span {
+      font: 400 var(--font-body-sm);
+      color: var(--text-heading);
+    }
+
+    .claro {
+      display: none;
+    }
+  }
+
+  & .ipt {
+    display: grid;
+    grid-template-columns: 50px 100px;
+    align-items: center;
+    position: relative;
+    background-color: var(--input-base);
+    width: 4rem;
+    height: 2rem;
+    border-radius: 999px;
+    border: 1px solid var(--input-stroke);
+
+    & input {
+      all: unset;
+      position: absolute;
+      height: 1.5rem;
+      width: 1.5rem;
+      background-color: var(--input-stroke);
+      background-color: var(--input-stroke);
+      border-radius: 50%;
+      margin: 0.25rem;
+      cursor: pointer;
+    }
+
+    &:has(:checked) {
+      background-color: var(--brand-light);
+      
+      & input {
+        background-color: var(--text-heading);
+        justify-self: end;
+      }
+    }
+  }
+}
+
+#fotocap {
+    color: var(--text-body);
+    font: 400 var(--body-sm);
+}
+
+
+.docfile {
+margin-top: .75rem;
+display: flex;
+align-items: center;
+gap: .75rem;
+position: relative;
+
+.docinpt {
+    cursor: pointer;
+    z-index: 1;
+background-color: var(--shape-button);
+height: 2.5rem;
+
+display: flex;
+align-items: center;
+padding: .75rem;
+gap: .5rem;
+border-radius: .5rem;
+font: 400 var(--body-sm);
+color: var(--text-head);
+
+&:hover {
+    background-color: var(--shape-hover);
+
+& svg path {
+    stroke: var(--brand-light);
+}
+
+}
+
+}
+}
+
+
