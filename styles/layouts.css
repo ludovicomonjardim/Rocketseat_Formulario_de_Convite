@@ -60,3 +60,9 @@ aside {
     font: var(--text-heading);
   }
 }
+
+#final {
+  display: grid;
+  grid-template-columns: 11rem 4fr;
+  gap: 1rem;
+}
