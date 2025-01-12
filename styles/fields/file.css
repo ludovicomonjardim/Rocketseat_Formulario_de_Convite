@@ -1,10 +1,13 @@
+ .file {
+    cursor: pointer;
+ }
+
  .docfile {
   margin-top: 0.75rem;
   display: flex;
-    align-items:baseline;
+  align-items:baseline;
   gap: 0.75rem;
   position: relative;
-  /* border: 1px dashed; */
 
   & input {
     all: unset;
@@ -37,10 +40,10 @@
 input[type="file"] {
   all: unset;
   &::file-selector-button {
-      display: none;
+    display: none;
   }
-      font: 400 var(--body-md);
-      color: var(--input-placeholder);
+  font: 400 var(--body-md);
+  color: var(--input-placeholder);
 }
 
 .file-name {
@@ -52,19 +55,16 @@ input[type="file"] {
   max-width: 200px;
 }
 
-/* Exibe o nome do arquivo quando selecionado */
  input[type="file"]::-webkit-file-upload-button {
-    background-color: var(--shape-button, #f0f0f0);
-    border: none;
-    border-radius: 0.5rem;
-    color: var(--text-head, #000);
-    cursor: pointer;
-    padding: 0.5rem 1rem;
-    font: 400 var(--body-sm, 14px Arial);
+  background-color: var(--shape-button, #f0f0f0);
+  border: none;
+  border-radius: 0.5rem;
+  color: var(--text-head, #000);
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  font: 400 var(--body-sm, 14px Arial);
 }
 
 input[type="file"]::-webkit-file-upload-button:hover {
-    background-color: var(--shape-hover, #ddd);
+  background-color: var(--shape-hover, #ddd);
 }
-
-

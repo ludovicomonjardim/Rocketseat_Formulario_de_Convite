@@ -61,14 +61,14 @@ aside {
   }
 }
 
-#final {
+#final_customization {
   display: grid;
   grid-template-columns: 11rem 4fr;
   gap: 1rem;
 }
 
 .horizontal_line {
-    margin-top: 0.75rem;
-    border-bottom: 0.1rem solid var(--shape-button);
-    width: 100%;
+  margin-top: 0.75rem;
+  border-bottom: 0.1rem solid var(--shape-button);
+  width: 100%;
 }
