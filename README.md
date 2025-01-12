@@ -1,4 +1,4 @@
-# ![Banner Formulário de Convite](https://github.com/ludovicomonjardim/05---ImagensDiversasGitHub/blob/main/README-Formulario_Convite.png)
+# ![Banner Formulário de Convite](banner.png)
 
 # Formulário Convite
 
